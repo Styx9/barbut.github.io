@@ -25,7 +25,7 @@ function bet() {
     bet2Elem.textContent = bet2;
   }
 }
-/*setTimeout(bet, 100);*/
+setTimeout(bet, 100);
 btnRoll.addEventListener("click", () => {
   const interval = setInterval(() => {
     rabdomizeDice();
@@ -76,3 +76,4 @@ btnRoll.addEventListener("click", () => {
     } else setTimeout(bet, 100);
   }, 1000);
 });
+

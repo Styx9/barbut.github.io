@@ -1,1 +1,1 @@
-# barbut.github.io
+# https://styx9.github.io/barbut.github.io/

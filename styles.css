@@ -1,0 +1,79 @@
+body {
+  background-color: #541212;
+  color: #ffffff;
+  height: 100vh;
+}
+h1 {
+  color: black;
+  font-size: 6em;
+  text-align: center;
+  font-family: Irish Grover, sans-serif;
+  margin-top: 0;
+}
+.dice-container {
+  display: flex;
+  justify-content: space-around;
+}
+.roll-btn {
+  background-color: #f0f0f0;
+  color: black;
+  font-size: 2em;
+  height: 3rem;
+  width: 8rem;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 5rem;
+  background-color: #468a9a;
+  font-family: Itim, sans-serif;
+}
+.roll-btn:hover {
+  background-color: #3b6f7a;
+}
+.roll-btn:active {
+  background-color: #2f5560;
+  border: #ffffff 2px solid;
+}
+.player-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.result {
+  display: none;
+}
+.refresh {
+  display: none;
+}
+@media (max-width: 600px) {
+  .dice-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+  }
+  .die img {
+    width: 60px;
+    height: 60px;
+  }
+  .dice-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+  }
+  .die img {
+    width: 60px;
+    height: 60px;
+  }
+  .roll-btn {
+    grid-column: span 2;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2em;
+  }
+}
